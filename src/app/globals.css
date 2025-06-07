@@ -1,0 +1,109 @@
+/* Add Inter font */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+    --primary-color: #4f46e5;
+    --primary-dark: #4338ca;
+    --secondary-color: #10b981;
+    --accent-color: #8b5cf6;
+    --light-gray: #f9fafb;
+    --dark-gray: #1f2937;
+    --success-color: #10b981;
+    --error-color: #ef4444;
+    --warning-color: #f59e0b;
+    --footer-bg: #f9fafb;
+    --footer-text: #4b5563;
+    --footer-link: #6b7280;
+    --footer-link-hover: #4f46e5;
+}
+
+body {
+    font-family: "Manrope", "Inter", -apple-system, BlinkMacSystemFont,
+        sans-serif;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    background-color: var(--light-gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+.display-4 {
+    letter-spacing: -0.02em;
+}
+
+.display-6 {
+    letter-spacing: -0.01em;
+}
+
+/* Spacing */
+section {
+    padding: 4rem 0;
+}
+
+.mb-section {
+    margin-bottom: 4rem;
+}
+
+/* Buttons */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0) 70%
+    );
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.btn:active::after {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: transform 0s ease, opacity 0.1s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Container max-width adjustments */
+.container {
+    max-width: 1200px;
+    padding: 0 1.5rem;
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}

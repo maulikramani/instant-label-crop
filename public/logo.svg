@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="180" height="40" viewBox="0 0 180 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- PDF Icon -->
+    <g transform="translate(0, 4)">
+        <!-- Base PDF shape -->
+        <path d="M20 0H4C2.9 0 2 0.9 2 2V30C2 31.1 2.9 32 4 32H28C29.1 32 30 31.1 30 30V10L20 0Z" fill="#4F46E5"/>
+        <!-- Folded corner -->
+        <path d="M19 11H29L19 1V11Z" fill="#818CF8"/>
+        <!-- Crop marks -->
+        <path d="M8 14H24M8 22H24M16 14V22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        <!-- Shine effect -->
+        <path d="M2 2C2 0.9 2.9 0 4 0H20L30 10V30C30 31.1 29.1 32 28 32H4C2.9 32 2 31.1 2 30V2Z" fill="url(#paint0_linear)" fill-opacity="0.2"/>
+    </g>
+    
+    <!-- Text "Instant" -->
+    <text x="40" y="20" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#2D3748">
+        Instant
+    </text>
+    
+    <!-- Text "PDF Crop" -->
+    <text x="40" y="35" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#4F46E5">
+        PDF CROP
+    </text>
+
+    <!-- Gradient definitions -->
+    <defs>
+        <linearGradient id="paint0_linear" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" stop-opacity="0.4"/>
+            <stop offset="1" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+</svg>
