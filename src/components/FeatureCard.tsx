@@ -1,12 +1,10 @@
-import "./FeatureCard.css"
-
+import "./FeatureCard.css";
 
 interface FeatureCardProps {
-    title: string
-    description: string
-    icon: any
+    title: string;
+    description: string;
+    icon: any;
 }
-
 
 function FeatureCard(props: FeatureCardProps) {
     return (
@@ -19,7 +17,7 @@ function FeatureCard(props: FeatureCardProps) {
                 <p>{props.description}</p>
             </div>
         </div>
-    )
+    );
 }
 
 export default FeatureCard;
